@@ -14,7 +14,7 @@ And then execute:
 
 ## Usage
 
-Add your Wombat credentials to `config/initializers/cenithub.rb`:
+Add your Cenithub credentials to `config/initializers/cenithub.rb`:
 
 ```ruby
 Cenithub.configure do |config|
@@ -36,7 +36,7 @@ You can also use the console to debug or test pushing objects.
 Start the console like this from your application where you are using Cenithub-ruby.
 
 ```shell
-bundle exec wombat-console
+bundle exec cenithub-console
 ```
 
 In the console you will have to setup your credentials, then you can push json objects like this:
