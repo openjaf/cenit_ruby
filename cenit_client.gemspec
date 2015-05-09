@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['asnioby@gmail.com','sanchojaf@gmail.com']
   spec.summary       = %q{ Ruby client for pushing data to Cenit }
   spec.description   = %q{ Ruby client for pushing data to Cenit }
-  spec.homepage      = "http://www.cenitsaas.com"
+  spec.homepage      = "https://github.com/openjaf/cenit_client"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
