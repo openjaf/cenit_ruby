@@ -17,7 +17,7 @@ describe CenitClient do
     expect(CenitClient.configuration.connection_id).to eql '123'
   end
 
-  it "set's the default push url to wombat.co" do
+  it "set's the default push url to cenithub.com" do
     expect(CenitClient.configuration.push_url).to eql 'https://www.cenithub.com/api/v1/push'
   end
 

@@ -38,7 +38,7 @@ describe CenitClient::Client do
       end
 
       it "will raise PushApiException" do
-        expect{ CenitClient::Client.push("name:value")}.to raise_error(CenitClient::Client::PushApiError, "Push not successful. Cenit returned response code 404 and message: wombat error")
+        expect{ CenitClient::Client.push("name:value")}.to raise_error(CenitClient::Client::PushApiError, "Push not successful. Cenit returned response code 404 and message: cenithub error")
       end
     end
   end
