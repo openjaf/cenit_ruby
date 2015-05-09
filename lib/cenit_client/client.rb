@@ -1,11 +1,10 @@
-require "cenithub/client/version"
+require "cenit_client/version"
 require 'openssl'
 require 'httparty'
 require 'active_model/array_serializer'
 
-module Cenithub
+module CenitClient
   module Client
-
     def self.push(json_payload, options=self.configuration)
 
       res = HTTParty.post(

@@ -1,11 +1,11 @@
 require "spec_helper"
 
-describe Cenithub::Client do
+describe CenitClient::Client do
 
   context "push json" do
 
     before do
-      Cenithub.configure do |config|
+      CenitClient.configure do |config|
         config.connection_id = "123"
         config.connection_token = "token"
       end
@@ -21,7 +21,7 @@ describe Cenithub::Client do
     end
 
     it "sends the connection_id and token as headers" do
-      Cenithub::Client.push("name:value")
+      CenitClient::Client.push("name:value")
     end
 
     context "with response not 202" do
@@ -34,11 +34,11 @@ describe Cenithub::Client do
               'X-Hub-Access-Token'=>'token',
               'X-Hub-Store'=>'123',
               'X-Hub-Timestamp'=>/.*/}
-          ).to_return(:status => 404, :body => "Cenithub error", :headers => {})
+          ).to_return(:status => 404, :body => "CenitClient error", :headers => {})
       end
 
       it "will raise PushApiException" do
-        expect{ Cenithub::Client.push("name:value")}.to raise_error(Cenithub::Client::PushApiError, "Push not successful. Cenit returned response code 404 and message: wombat error")
+        expect{ CenitClient::Client.push("name:value")}.to raise_error(CenitClient::Client::PushApiError, "Push not successful. Cenit returned response code 404 and message: wombat error")
       end
     end
   end
