@@ -8,3 +8,8 @@
 /pkg/
 /spec/reports/
 /tmp/
+**.orig
+*.swp
+*.swo
+*~
+
