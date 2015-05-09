@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.platform      = Gem::Platform::RUBY
   spec.name          = "cenit_client"
   spec.version       = CenitClient::VERSION
-  spec.authors       = ["Asnioby Hernandez, Miguel Sancho"]
-  spec.email         = ["asnioby@gmail.com, sanchojaf@gmail.com"]
+  spec.authors       = ['Asnioby Hernandez','Miguel Sancho']
+  spec.email         = ['asnioby@gmail.com','sanchojaf@gmail.com']
   spec.summary       = %q{ Ruby client for pushing data to Cenit }
   spec.description   = %q{ Ruby client for pushing data to Cenit }
   spec.homepage      = "http://www.cenitsaas.com"
