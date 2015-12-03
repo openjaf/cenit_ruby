@@ -6,7 +6,7 @@ Ruby API client for objects to [Cenithub](http://www.cenithub.com)
 
 Add this line to your application's Gemfile:
 
-    gem 'cenithub-ruby', github: 'asnioby/cenithub-client', require: 'cenithub'
+    gem 'cenit_ruby', github: 'openjaf/cenit_ruby'
 
 And then execute:
 
