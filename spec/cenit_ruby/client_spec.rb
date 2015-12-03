@@ -1,11 +1,11 @@
 require "spec_helper"
 
-describe CenitClient::Client do
+describe CenitRuby::Client do
 
   context "push json" do
 
     before do
-      CenitClient.configure do |config|
+      CenitRuby.configure do |config|
         config.connection_id = "123"
         config.connection_token = "token"
       end
@@ -21,7 +21,7 @@ describe CenitClient::Client do
     end
 
     it "sends the connection_id and token as headers" do
-      CenitClient::Client.push("name:value")
+      CenitRuby::Client.push("name:value")
     end
 
     context "with response not 202" do
@@ -38,7 +38,7 @@ describe CenitClient::Client do
       end
 
       it "will raise PushApiException" do
-        expect{ CenitClient::Client.push("name:value")}.to raise_error(CenitClient::Client::PushApiError, "Push not successful. Cenit returned response code 404 and message: cenithub error")
+        expect{ CenitRuby::Client.push("name:value")}.to raise_error(CenitRuby::Client::PushApiError, "Push not successful. Cenit returned response code 404 and message: cenithub error")
       end
     end
   end

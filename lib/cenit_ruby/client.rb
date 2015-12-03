@@ -1,9 +1,9 @@
-require "cenit_client/version"
+require "cenit_ruby/version"
 require 'openssl'
 require 'httparty'
 require 'active_model/array_serializer'
 
-module CenitClient
+module CenitRuby
   module Client
     def self.push(json_payload, options=self.configuration)
 
@@ -78,9 +78,9 @@ module CenitClient
 
     def self.configuration
       {
-        push_url: Cenithub.configuration.push_url,
-        connection_id: Cenithub.configuration.connection_id,
-        connection_token: Cenithub.configuration.connection_token
+        push_url: CenitRuby.configuration.push_url,
+        connection_id: CenitRuby.configuration.connection_id,
+        connection_token: CenitRuby.configuration.connection_token
       }
     end
 

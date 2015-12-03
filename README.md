@@ -33,7 +33,7 @@ CenitRuby::Client.push(json_payload)
 
 You can also use the console to debug or test pushing objects.
 
-Start the console like this from your application where you are using Cenithub-ruby.
+Start the console like this from your application where you are using CenitRuby.
 
 ```shell
 bundle exec cenithub-console
@@ -42,7 +42,7 @@ bundle exec cenithub-console
 In the console you will have to setup your credentials, then you can push json objects like this:
 
 ```ruby
-Cenithub.configure do |config|
+CenitRuby.configure do |config|
   config.connection_token = "YOUR TOKEN"
   config.connection_id = "YOUR ID"
 end
