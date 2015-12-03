@@ -14,10 +14,10 @@ And then execute:
 
 ## Usage
 
-Add your Cenithub credentials to `config/initializers/cenithub.rb`:
+Add your CenitHub credentials to `config/initializers/cenithub.rb`:
 
 ```ruby
-Cenithub.configure do |config|
+CenitRuby.configure do |config|
   config.connection_token = "YOUR TOKEN"
   config.connection_id = "YOUR CONNECTION ID"
 end
@@ -26,7 +26,7 @@ end
 You can now send json payload objects to Cenithub by calling:
 
 ```ruby
-Cenithub::Client.push(json_payload)
+CenitRuby::Client.push(json_payload)
 ```
 
 ## Use console
@@ -49,7 +49,7 @@ end
 
 pirate_payload = %{{"pirates": [{"id": "1", "name": "Blackbeard"}]}}
 
-Cenithub::Client.push(pirate_payload)
+CenitRuby::Client.push(pirate_payload)
 ```
 
 ## Contributing
