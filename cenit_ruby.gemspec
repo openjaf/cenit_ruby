@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cenit_client/version'
+require 'cenit_ruby/version'
 
 Gem::Specification.new do |spec|
   spec.platform      = Gem::Platform::RUBY
-  spec.name          = "cenit_client"
-  spec.version       = CenitClient::VERSION
-  spec.authors       = ['Asnioby Hernandez','Miguel Sancho']
-  spec.email         = ['asnioby@gmail.com','sanchojaf@gmail.com']
-  spec.summary       = %q{ Ruby client for pushing data to Cenit }
-  spec.description   = %q{ Ruby client for pushing data to Cenit }
-  spec.homepage      = "https://github.com/openjaf/cenit_client"
+  spec.name          = "cenit_ruby"
+  spec.version       = CenitRuby::VERSION
+  spec.authors       = ['Asnioby Hernandez','Maikel Arcia','Miguel Sancho']
+  spec.email         = ['asnioby@gmail.com','macarci@gmail.com', 'sanchojaf@gmail.com']
+  spec.summary       = %q{ Ruby client for pushing data to CenitHub }
+  spec.description   = %q{ Ruby client for pushing data to CenitHub }
+  spec.homepage      = "https://github.com/openjaf/cenit_ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
